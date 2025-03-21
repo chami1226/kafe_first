@@ -53,15 +53,15 @@ bar {
   transition: 0.4s;
 }
 
-#menu-toggle:checked ~ .menu-button .bar:nth-child(1) {
+#menu-toggle:checked ~ menu-button bar:nth-child(1) {
   transform: rotate(45deg) translate(-2px, 3px);
 }
 
-#menu-toggle:checked ~ .menu-button .bar:nth-child(2) {
+#menu-toggle:checked ~ menu-button bar:nth-child(2) {
   opacity: 0;
 }
 
-#menu-toggle:checked ~ .menu-button .bar:nth-child(3) {
+#menu-toggle:checked ~ menu-button bar:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -13px);
 }
 
@@ -146,7 +146,7 @@ slideimg:nth-of-type(3){
 }
 
 @media (max-width: 768px) {
-  .slider-container {
+  slider-container {
     position: relative;
     width: 100%;
     height: 500px;
@@ -155,7 +155,7 @@ slideimg:nth-of-type(3){
 }
 
 /* メイン */
-home {
+#home {
     text-align: light;
     padding: 20px 100px;
     background: linear-gradient(to bottom, #F8E6E0, #FAF3E0);
