@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
-    const menuLinks = document.querySelectorAll("menu a");
+    const menuLinks = document.querySelectorAll(".menu a");
 
     menuLinks.forEach(link => {
         link.addEventListener("click", function () {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
-    const menuLinks = document.querySelectorAll("menu a");
+    const menuLinks = document.querySelectorAll(".menu a");
 
     menuLinks.forEach(link => {
         link.addEventListener("click", function (event) {
