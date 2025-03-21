@@ -53,19 +53,19 @@ bar {
   transition: 0.4s;
 }
 
-menu-toggle:checked ~ menu-button bar:nth-child(1) {
+#menu-toggle:checked ~ menu-button bar:nth-child(1) {
   transform: rotate(45deg) translate(-2px, 3px);
 }
 
-menu-toggle:checked ~ menu-button bar:nth-child(2) {
+#menu-toggle:checked ~ menu-button bar:nth-child(2) {
   opacity: 0;
 }
 
-menu-toggle:checked ~ menu-button bar:nth-child(3) {
+#menu-toggle:checked ~ menu-button bar:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -13px);
 }
 
-menu-toggle {
+#menu-toggle {
   display: none;
 }
 
@@ -81,7 +81,7 @@ menu {
   overflow-y: auto;
 }
 
-menu-toggle:checked ~ .menu {
+#menu-toggle:checked ~ .menu {
   top: 0;
 }
 
