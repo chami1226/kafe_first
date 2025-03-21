@@ -53,7 +53,7 @@ bar {
   transition: 0.4s;
 }
 
-#menu-toggle:checked ~ .menu-button .bar:nth-child(1) {
+menu-toggle:checked ~ .menu-button .bar:nth-child(1) {
   transform: rotate(45deg) translate(-2px, 3px);
 }
 
