@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+home2{
+  font-family:'Kaisei Decol';
+}
+
 /* ヘッダー */
 header {
   position:fixed;
