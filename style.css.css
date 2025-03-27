@@ -1,0 +1,253 @@
+/* 全体のスタイル */
+body {
+  font-family:'Yu Gothic Medium';
+  background-color: #faf1e1;
+  color: #464c50;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header {
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+  background-color: #FFF;
+  box-sizing: border-box;
+}
+
+.shopname{
+  font-family:'Papyrus';
+  margin-top: -16%;
+}
+
+/* メニューバー */
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.menu-button {
+  display: block;
+  position:fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #615050;
+  transition: 0.4s;
+}
+
+#menu-toggle:checked ~ .menu-button .bar:nth-child(1) {
+  transform: rotate(45deg) translate(-2px, 3px);
+}
+
+#menu-toggle:checked ~ .menu-button .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-button .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -13px);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  background-color: #f3f3f3;
+  transition: 0.4s;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+#menu-toggle:checked ~ .menu {
+  top: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block;
+  padding: 12px;
+  transition: 0.2s;
+  font-family:'Yu Gothic Medium';
+}
+
+.menu ul li a:hover {
+  color: #8f5c74;
+}
+
+/*ホームのスライドショー*/
+.backround{
+  position: relative;
+  text-align:  center;
+  padding:  10px;
+  background-color: #F8E6E0;
+  font-family:'Yu Gothic Medium';
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  top: 80px;
+}
+
+.slideimg{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background-size: cover;
+  animation: slideAnime 15s infinite;
+
+}
+
+.slideimg:nth-of-type(1){ 
+  background-image: url('file:///C:/Users/imahc/OneDrive/Documents/webデザイン/試作品：カフェ/外観、背景.webp'); animation-delay: 0s; 
+}
+.slideimg:nth-of-type(2){ 
+  background-image: url('file:///C:/Users/imahc/OneDrive/Documents/webデザイン/試作品：カフェ/外観、背景2.webp'); animation-delay: 5s; 
+}
+.slideimg:nth-of-type(3){ 
+  background-image: url('file:///C:/Users/imahc/OneDrive/Documents/webデザイン/試作品：カフェ/背景、外観3.webp'); animation-delay: 10s; 
+}
+
+@keyframes slideAnime {
+	0%, 30%, 100% { opacity: 0; }
+	10%, 20% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+}
+
+
+/* メイン */
+#home {
+    text-align: light;
+    padding: 20px 100px;
+    background: linear-gradient(to bottom, #F8E6E0, #FAF3E0);
+}
+
+.slide-wrap {
+    background-color: #ccc;
+    display: flex;
+    margin: 0 auto;
+    max-width: auto;
+    width: 100%;
+  }
+  .slide-box {
+    height: auto;
+    margin: .10%;
+    width: auto;
+  }
+  .slide-box a {
+    background-color: #fff;
+    color: #222;
+    display: block;
+    text-decoration: none;
+  }
+  .slide-box img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .slide-box p {
+    font-weight: bold;
+    padding: 10px;
+    margin:.5rem auto;
+  }
+  
+/* スマホサイズ */
+  @media screen and (max-width: 768px) {
+    .slide-wrap {
+      overflow-x: scroll;
+    }
+    .slide-box {
+      flex: 0 0 70%;
+      margin: auto 1% auto auto;
+    }
+  }
+
+/* おすすめメニュー */
+#menu {
+    padding: 30px 70px;
+    text-align: center;
+    font-family:'Segoe Print';
+}
+
+.menu-item {
+    display:flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+/* お知らせ一覧 */
+#news {
+  padding: 50px 20px;
+  text-align: center;
+  font-family:'Segoe Print';
+}
+
+/* 店舗情報 */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    font-family:'Segoe Print';
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* スマホサイズ */
+@media (max-width: 789px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
