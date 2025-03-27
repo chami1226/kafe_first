@@ -44,6 +44,10 @@ header {
   z-index: 2;
 }
 
+home2{
+  font-family:'Kaisei Decol';
+}
+
 .bar {
   display: block;
   width: 25px;
