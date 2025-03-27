@@ -7,10 +7,6 @@ body {
   padding: 0;
 }
 
-home2{
-  font-family:'Kaisei Decol';
-}
-
 /* ヘッダー */
 header {
   position:fixed;
@@ -156,6 +152,10 @@ header {
     height: 500px;
     overflow: hidden;
   }
+}
+
+home2{
+  font-family:'Kaisei Decol';
 }
 
 /* メイン */
